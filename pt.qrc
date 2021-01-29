@@ -1,0 +1,41 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>pt/edit.png</file>
+    <file>pt/product.png</file>
+    <file>pt/undo.png</file>
+    <file>pt/administrator.png</file>
+    <file>pt/conference.png</file>
+    <file>pt/add1.png</file>
+    <file>pt/sms.png</file>
+    <file>pt/usr.png</file>
+    <file>pt/sn.png</file>
+    <file>pt/ct.png</file>
+    <file>pt/ms.png</file>
+    <file>pt/bg.jpg</file>
+    <file>pt/pos.png</file>
+    <file>pt/img.jpeg</file>
+    <file>pt/icons.png</file>
+    <file>pt/mac.png</file>
+    <file>pt/catt.png</file>
+    <file>pt/setting.png</file>
+    <file>pt/pwd.png</file>
+    <file>pt/ussr.png</file>
+    <file>pt/db.png</file>
+    <file>pt/add-user.png</file>
+    <file>pt/add-category.png</file>
+    <file>pt/add-image.png</file>
+    <file>pt/add-item.png</file>
+    <file>pt/delete.png</file>
+    <file>pt/drink.png</file>
+    <file>pt/food.png</file>
+    <file>pt/save.png</file>
+    <file>pt/button.png</file>
+    <file>pt/logout.png</file>
+    <file>pt/bg2.jpg</file>
+    <file>pt/search.png</file>
+    <file>pt/chicken.png</file>
+    <file>pt/print.png</file>
+
+ 
+</qresource>
+</RCC>

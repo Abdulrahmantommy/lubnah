@@ -1,0 +1,6186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1444</width>
+    <height>691</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Big Mac</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="pt.qrc">
+    <normaloff>:/pt/catt.png</normaloff>:/pt/catt.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>-50</x>
+      <y>30</y>
+      <width>231</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color:rgb(60, 39, 27);
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cashier">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-80</x>
+      <y>420</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Hack</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 19px solid;
+		border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(204, 86, 0);
+
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 70px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 20px solid;
+	border-right:18px;
+	border-bottom:1px solid  rgb(60, 39, 27);
+    border-top:1px solidrgb(60, 39, 27);
+   background-color:rgb(60, 39, 27);
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+   border-radius: 20px solid;
+	border-right:18px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(189, 22, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string> CAHIER</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pt.qrc">
+      <normaloff>:/pt/pos.png</normaloff>:/pt/pos.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>46</width>
+      <height>46</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_category">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-70</x>
+      <y>490</y>
+      <width>291</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Hack</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(204, 86, 0);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 70px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 20px solid;
+	border-right:18px;
+	border-bottom:1px solidrgb(60, 39, 27);
+    border-top:1px solid rgb(60, 39, 27) ;
+   background-color:rgb(60, 39, 27);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+   border-radius: 20px solid;
+	border-right:18px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(189, 22, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string>CATEGORY</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pt.qrc">
+      <normaloff>:/pt/food.png</normaloff>:/pt/food.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tab_main">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>10</y>
+      <width>1461</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(39, 42, 52);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QFrame" name="frame_menu">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>691</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>70</y>
+        <width>571</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: none;
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 190, 0);
+	
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_username">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>400</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+	color: rgb(255, 255, 255);
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>UserName</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>400</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+image: url(:/pt/ussr.png);
+	border:0px solid ;
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_password">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>460</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	color: rgb(255, 255, 255);
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color: rgb(255, 165, 0);
+
+	
+
+}
+</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>450</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="pt.qrc">:/pt/pwd.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>520</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>LOGIN</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>210</y>
+        <width>531</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:none;
+image: url(:/pt/icons.png);
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>230</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+	border-radius: 14px solid;
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+}
+QPushButton:hover{
+	border-top:3px solid rgb(237, 28, 47);
+
+	
+
+}
+QPushButton:pressed{
+	border-top:3px solid rgb(255, 205, 0);
+
+	
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>240</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+	border-radius: 14px solid;
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+}
+QPushButton:hover{
+	border-right:3px solid rgb(237, 28, 47);
+
+	
+
+}
+QPushButton:pressed{
+	border-right:3px solid rgb(255, 205, 0);
+
+	
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>230</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>9</width>
+        <height>9</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>7</width>
+        <height>9</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+	border-radius: 14px solid;
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+}
+QPushButton:hover{
+	border-left:3px solid rgb(237, 28, 47);
+
+	
+
+}
+QPushButton:pressed{
+	border-left:3px solid rgb(255, 205, 0);
+
+	
+
+}</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="autoRepeatDelay">
+       <number>300</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>240</y>
+        <width>121</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+	border-radius: 14px solid;
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+}
+QPushButton:hover{
+	border-bottom:3px solid rgb(237, 28, 47);
+
+	
+
+}
+QPushButton:pressed{
+	border-bottom:3px solid rgb(255, 205, 0);
+
+	
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_6">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>50</y>
+        <width>191</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/pt/pos.png);
+border: none;
+background-color: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <zorder>frame_menu</zorder>
+     <zorder>frame</zorder>
+     <zorder>frame_2</zorder>
+     <zorder>lineEdit_username</zorder>
+     <zorder>pushButton_6</zorder>
+     <zorder>lineEdit_password</zorder>
+     <zorder>label_3</zorder>
+     <zorder>btn_login</zorder>
+     <zorder>pushButton_2</zorder>
+     <zorder>pushButton_4</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>pushButton_3</zorder>
+     <zorder>frame_6</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QFrame" name="frame_menu_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>160</y>
+        <width>691</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btn_category_2">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>170</y>
+         <width>181</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>لوحة التحكم</string>
+       </property>
+       <property name="icon">
+        <iconset resource="pt.qrc">
+         <normaloff>:/pt/db.png</normaloff>:/pt/db.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>70</width>
+         <height>70</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>20</y>
+         <width>181</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>الكاشير</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../Desktop/pt.qrc">
+         <normaloff>:/pt/administrator.png</normaloff>:/pt/administrator.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>70</width>
+         <height>70</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_8">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>50</y>
+        <width>191</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/pt/pos.png);
+border: none;
+background-color: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>70</y>
+        <width>571</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: none;
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 190, 0);
+	
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <zorder>frame_5</zorder>
+     <zorder>frame_menu_3</zorder>
+     <zorder>frame_8</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_dashbord">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>290</y>
+        <width>181</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>ADD USER</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/add-user.png</normaloff>:/pt/add-user.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>290</y>
+        <width>181</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>ADD CATEGORY</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/add-category.png</normaloff>:/pt/add-category.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>80</y>
+        <width>561</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(35, 31, 32, 218));
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 165, 0);
+	
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>111</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="pt.qrc">:/pt/db.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>290</y>
+        <width>181</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>ADD ITEMS</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/add-item.png</normaloff>:/pt/add-item.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_menu_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>120</y>
+        <width>691</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <zorder>frame_menu_2</zorder>
+     <zorder>pushButton_5</zorder>
+     <zorder>pushButton_7</zorder>
+     <zorder>frame_4</zorder>
+     <zorder>label_6</zorder>
+     <zorder>pushButton_8</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_edit_and_add">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QFrame" name="frame_7">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>80</y>
+        <width>571</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(35, 31, 32, 218));
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 165, 0);
+	
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>111</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="pt.qrc">:/pt/db.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_7">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>10</y>
+        <width>201</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/pt/mac.png);
+border-radius: 19px solid;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-20</y>
+        <width>1241</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="pt.qrc">:/pt/bg2.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_menu_5">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>120</y>
+        <width>691</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>10</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="pt.qrc">:/pt/add-user.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_password_4">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>320</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color: rgb(255, 165, 0);
+
+	
+
+}
+</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_4">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>420</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/add-user.png</normaloff>:/pt/add-user.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>33</width>
+        <height>33</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_username_4">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>260</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>UserName</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>370</y>
+        <width>114</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ADMIN</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>370</y>
+        <width>114</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CASHIER</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_5">
+      <property name="geometry">
+       <rect>
+        <x>1410</x>
+        <y>500</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/add-user.png</normaloff>:/pt/add-user.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>33</width>
+        <height>33</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>1400</x>
+        <y>450</y>
+        <width>114</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ADMIN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>110</y>
+        <width>111</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="pt.qrc">:/pt/db.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>1780</x>
+        <y>90</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="pt.qrc">:/pt/add-user.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>1500</x>
+        <y>450</y>
+        <width>114</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CASHIER</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_username_5">
+      <property name="geometry">
+       <rect>
+        <x>1400</x>
+        <y>340</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>UserName</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_password_5">
+      <property name="geometry">
+       <rect>
+        <x>1400</x>
+        <y>400</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color: rgb(255, 165, 0);
+
+	
+
+}
+</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>510</y>
+        <width>1291</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(39, 42, 52);</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QFrame" name="frame_menu_12">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>130</y>
+          <width>691</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="lineEdit_usr">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>30</y>
+           <width>181</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_pwd">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>90</y>
+           <width>181</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_addusr">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>200</y>
+           <width>201</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+         </property>
+         <property name="text">
+          <string>ADD</string>
+         </property>
+         <property name="icon">
+          <iconset resource="pt.qrc">
+           <normaloff>:/pt/add-user.png</normaloff>:/pt/add-user.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>40</y>
+          <width>111</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/db.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_6">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>280</y>
+          <width>114</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CASHIER</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>20</y>
+          <width>71</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/add-user.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_5">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>280</y>
+          <width>114</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ADMIN</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_14">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>90</y>
+          <width>561</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+   background-color: none;
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 165, 0);
+	
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <zorder>frame_14</zorder>
+       <zorder>frame_menu_12</zorder>
+       <zorder>label_31</zorder>
+       <zorder>radioButton_6</zorder>
+       <zorder>label_33</zorder>
+       <zorder>radioButton_5</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>40</y>
+          <width>111</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/db.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_login_9">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>420</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+        </property>
+        <property name="text">
+         <string>DELETE </string>
+        </property>
+        <property name="icon">
+         <iconset resource="pt.qrc">
+          <normaloff>:/pt/delete.png</normaloff>:/pt/delete.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>33</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_menu_14">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>130</y>
+          <width>691</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_16">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>90</y>
+          <width>561</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: none;
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 165, 0);
+	
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>890</x>
+          <y>30</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/delete.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_username_9">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>160</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>SEARCH BY NAME</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>160</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/search.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>frame_16</zorder>
+       <zorder>frame_menu_14</zorder>
+       <zorder>label_37</zorder>
+       <zorder>btn_login_9</zorder>
+       <zorder>label_38</zorder>
+       <zorder>lineEdit_username_9</zorder>
+       <zorder>label_26</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_login_8">
+        <property name="geometry">
+         <rect>
+          <x>1410</x>
+          <y>500</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+        </property>
+        <property name="text">
+         <string>ADD</string>
+        </property>
+        <property name="icon">
+         <iconset resource="pt.qrc">
+          <normaloff>:/pt/add-user.png</normaloff>:/pt/add-user.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>33</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_7">
+        <property name="geometry">
+         <rect>
+          <x>1400</x>
+          <y>450</y>
+          <width>114</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ADMIN</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_15">
+        <property name="geometry">
+         <rect>
+          <x>1290</x>
+          <y>160</y>
+          <width>571</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(35, 31, 32, 218));
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 165, 0);
+	
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>1780</x>
+          <y>90</y>
+          <width>71</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/add-user.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_8">
+        <property name="geometry">
+         <rect>
+          <x>1500</x>
+          <y>450</y>
+          <width>114</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CASHIER</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_username_8">
+        <property name="geometry">
+         <rect>
+          <x>1400</x>
+          <y>340</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+        </property>
+        <property name="placeholderText">
+         <string>UserName</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_password_8">
+        <property name="geometry">
+         <rect>
+          <x>1400</x>
+          <y>400</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color: rgb(255, 165, 0);
+
+	
+
+}
+</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Password</string>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="toolButton_17">
+        <property name="geometry">
+         <rect>
+          <x>1290</x>
+          <y>90</y>
+          <width>201</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/pt/mac.png);
+border-radius: 19px solid;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>40</y>
+          <width>111</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/db.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_20">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>90</y>
+          <width>561</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(35, 31, 32, 218));
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 165, 0);
+	
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_login_13">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>340</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+        </property>
+        <property name="text">
+         <string>ADD CATEGORY</string>
+        </property>
+        <property name="icon">
+         <iconset resource="pt.qrc">
+          <normaloff>:/pt/add-category.png</normaloff>:/pt/add-category.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>33</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_username_13">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>290</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>CATEGORY NAME</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_menu_18">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>130</y>
+          <width>691</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>880</x>
+          <y>30</y>
+          <width>61</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/add-category.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>frame_20</zorder>
+       <zorder>frame_menu_18</zorder>
+       <zorder>btn_login_8</zorder>
+       <zorder>radioButton_7</zorder>
+       <zorder>frame_15</zorder>
+       <zorder>label_36</zorder>
+       <zorder>radioButton_8</zorder>
+       <zorder>lineEdit_username_8</zorder>
+       <zorder>lineEdit_password_8</zorder>
+       <zorder>toolButton_17</zorder>
+       <zorder>label_48</zorder>
+       <zorder>btn_login_13</zorder>
+       <zorder>lineEdit_username_13</zorder>
+       <zorder>label_51</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_16">
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_username_14">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>150</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>ITEM NAME</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_menu_19">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>130</y>
+          <width>691</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/pt/pos.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 181));
+}
+QFrame:hover{
+	border-left:3px solid rgb(255, 242, 0);
+	border-bottom:3px solid rgb(255, 242, 0);
+    border-top:3px solid rgb(255, 190, 0);
+	border-right:3px solid rgb(255, 190, 0);
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="businessLogo">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>20</y>
+           <width>151</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <property name="indent">
+          <number>-1</number>
+         </property>
+         <property name="openExternalLinks">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="browseBtn">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>160</y>
+           <width>151</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+         </property>
+         <property name="text">
+          <string> IMAGE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="pt.qrc">
+           <normaloff>:/pt/add-image.png</normaloff>:/pt/add-image.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>33</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_21">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>90</y>
+          <width>561</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame{
+	border-radius: 19px solid;
+	
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(35, 31, 32, 218));
+}
+QFrame:hover{
+	
+	border:3px solid rgb(255, 165, 0);
+	
+	
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>40</y>
+          <width>111</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/db.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="saveBtn">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>390</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+
+
+
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+        </property>
+        <property name="text">
+         <string>ADD ITEM</string>
+        </property>
+        <property name="icon">
+         <iconset resource="pt.qrc">
+          <normaloff>:/pt/add-category.png</normaloff>:/pt/add-category.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>33</width>
+          <height>33</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_52">
+        <property name="geometry">
+         <rect>
+          <x>880</x>
+          <y>20</y>
+          <width>61</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="pt.qrc">:/pt/add-category.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_username_15">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>190</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border-radius: 19px solid;
+	border-left:8px solid;
+	
+	
+
+	border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+
+	background-color: qlineargradient(spread:pad, x1:0.720379, y1:0.903409, x2:0.720379, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));
+}
+
+QLineEdit:hover{
+	border-bottom:3px solid rgb(255, 165, 0);
+	color:rgb(255, 165, 0);
+
+	
+
+}
+</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>ITEM PRICE   $</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>230</y>
+          <width>271</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox::!on:pressed
+{
+border : 1px black;
+border-style : solid;
+}
+
+QComboBox::!on:hover
+{
+border : 1px black;
+border-style : solid;
+	background-color: rgb(59, 25, 0);
+}
+
+QComboBox
+{
+border : 1px black;
+border-style : solid;
+	
+	background-color: rgb(204, 86, 0);
+	color: rgb(252, 163, 0);
+}
+</string>
+        </property>
+        <property name="maxVisibleItems">
+         <number>12</number>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::InsertAfterCurrent</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string>CATEGORY</string>
+         </property>
+         <property name="icon">
+          <iconset resource="pt.qrc">
+           <normaloff>:/pt/add-category.png</normaloff>:/pt/add-category.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>شعبيه</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>المقبلات</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>مشاريب</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>مشاوي</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>اضافات</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>بروستد</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>سناك</string>
+         </property>
+        </item>
+       </widget>
+       <zorder>frame_21</zorder>
+       <zorder>frame_menu_19</zorder>
+       <zorder>lineEdit_username_14</zorder>
+       <zorder>label_50</zorder>
+       <zorder>saveBtn</zorder>
+       <zorder>label_52</zorder>
+       <zorder>lineEdit_username_15</zorder>
+       <zorder>comboBox_2</zorder>
+      </widget>
+     </widget>
+     <zorder>label_13</zorder>
+     <zorder>frame_menu_5</zorder>
+     <zorder>frame_7</zorder>
+     <zorder>label_12</zorder>
+     <zorder>toolButton_7</zorder>
+     <zorder>label_14</zorder>
+     <zorder>lineEdit_password_4</zorder>
+     <zorder>btn_login_4</zorder>
+     <zorder>lineEdit_username_4</zorder>
+     <zorder>radioButton</zorder>
+     <zorder>radioButton_2</zorder>
+     <zorder>btn_login_5</zorder>
+     <zorder>radioButton_3</zorder>
+     <zorder>label_24</zorder>
+     <zorder>label_25</zorder>
+     <zorder>radioButton_4</zorder>
+     <zorder>lineEdit_username_5</zorder>
+     <zorder>lineEdit_password_5</zorder>
+     <zorder>tabWidget_2</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_49">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>820</y>
+        <width>171</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>فراخ مشوية</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_51">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>730</y>
+        <width>171</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>فراخ مشوية</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_53">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>910</y>
+        <width>171</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>فراخ مشوية</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_54">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>1000</y>
+        <width>171</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>فراخ مشوية</string>
+      </property>
+      <property name="icon">
+       <iconset resource="pt.qrc">
+        <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>611</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>596</width>
+         <height>1216</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_40">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pushButton_32">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushButton_26">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButton_42">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="pushButton_34">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButton_56">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton_50">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_37">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="pushButton_35">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_47">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_46">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QPushButton" name="pushButton_61">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="2">
+         <widget class="QPushButton" name="pushButton_38">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pushButton_28">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QPushButton" name="pushButton_43">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton_55">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="pushButton_29">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="pushButton_33">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="2">
+         <widget class="QPushButton" name="pushButton_67">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QPushButton" name="pushButton_45">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="pushButton_30">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="2">
+         <widget class="QPushButton" name="pushButton_57">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_52">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="2">
+         <widget class="QPushButton" name="pushButton_63">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="pushButton_68">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="pushButton_59">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QPushButton" name="pushButton_65">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QPushButton" name="pushButton_64">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QPushButton" name="pushButton_69">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QPushButton" name="pushButton_27">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QPushButton" name="pushButton_70">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="QPushButton" name="pushButton_48">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QPushButton" name="pushButton_60">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QPushButton" name="pushButton_58">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="QPushButton" name="pushButton_71">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="QPushButton" name="pushButton_36">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QPushButton" name="pushButton_62">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="QPushButton" name="pushButton_66">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="2">
+         <widget class="QPushButton" name="pushButton_31">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QPushButton" name="pushButton_39">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="QPushButton" name="pushButton_41">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QPushButton" name="pushButton_44">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+  
+
+}
+QPushButton:hover{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+
+QPushButton:pressed{
+	border-radius: 36px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(44, 50, 93);
+
+
+  
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string>فراخ مشوية</string>
+          </property>
+          <property name="icon">
+           <iconset resource="pt.qrc">
+            <normaloff>:/pt/chicken.png</normaloff>:/pt/chicken.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>80</width>
+            <height>80</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btn_login_16">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>إضافات</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_18">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>المقبلات</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_19">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>البروستد</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_20">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>السناك</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_21">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>شعبية</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_22">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>مشاوي</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_login_23">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>0</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(163, 14, 18);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 7px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 2px solid;
+	border-right:2px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(237, 28, 47);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+
+   background-color:rgb(189, 22, 37);
+}</string>
+      </property>
+      <property name="text">
+       <string>معجنات</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_exit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-70</x>
+      <y>610</y>
+      <width>291</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Hack</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 19px solid;
+	border-bottom:0px solid rgb(171, 16, 20);
+    border-top:0px solid rgb(171, 16, 20);
+	
+	background-color: rgb(204, 86, 0);
+
+
+  
+
+}
+
+QPushButton:hover{
+	border: 70px solid qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:1 rgba(0, 0, 0, 0));
+   border-radius: 20px solid;
+	border-right:18px;
+	border-bottom:1px solidrgb(60, 39, 27);
+    border-top:1px solid rgb(60, 39, 27) ;
+   background-color:rgb(60, 39, 27);
+
+	
+
+
+}
+QPushButton:pressed{
+	color:rgb(255, 205, 0);
+   border-radius: 20px solid;
+	border-right:18px;
+	border-bottom:1px solid  rgb(237, 28, 45);
+    border-top:1px solid rgb(237, 28, 46) ;
+   background-color:rgb(189, 22, 37);
+}</string>
+    </property>
+    <property name="text">
+     <string>    EXIT</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pt.qrc">
+      <normaloff>:/pt/logout.png</normaloff>:/pt/logout.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>frame_3</zorder>
+   <zorder>btn_exit</zorder>
+   <zorder>btn_cashier</zorder>
+   <zorder>btn_category</zorder>
+   <zorder>tab_main</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pt.qrc"/>
+  <include location="../../Desktop/pt.qrc"/>
+  <include location="../../.designer/backup/pt.qrc"/>
+ </resources>
+ <connections/>
+</ui>
